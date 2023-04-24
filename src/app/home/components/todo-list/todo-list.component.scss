@@ -1,0 +1,53 @@
+@import '../../../../assets/dist/scss/variables';
+
+section{
+    width: 100%;
+    min-height:250px;
+
+    background-color: $secondary-background-color;
+    box-shadow: 0 4px 10px rgba(0,0,0,.8);
+    margin-top: 20px;
+
+    &.loading{
+        background-image: url('../../../../assets/img/image.webp');
+        background-repeat: no-repeat;
+        background-position: center 30px;
+        background-size: 50%;
+    }
+
+    ul{
+        padding: 20px;
+        li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            input{
+                &[type=checkbox]{
+                    width: 5%;
+                }
+
+                &[type=text]{
+                    width: 80%;
+                    border: none;
+                    padding: 5px 10px;
+                    font-size: 16px;
+
+                    color: $primary-text-color;
+
+                    &.checked{
+                        text-decoration: line-through;
+                    }       
+                }
+
+                button{
+                    border: none;
+                    background: none;
+                    width: 5%;
+                }
+            }
+        }
+
+    }
+}
